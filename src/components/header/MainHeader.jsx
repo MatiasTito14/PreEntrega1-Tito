@@ -9,16 +9,16 @@ const MainHeader = () => {
   const handleCloseMenu = () => {};
 
   return (
-    <header className="container mx-auto items-center gap-8 px-4 p-6 flex">
+    <header className="container mx-auto flex items-center gap-8 p-6 px-4">
       <button className="md:hidden" onClick={handleOpenMenu}>
         <MenuIcons />
       </button>
       <img
         src={LogoSneakers}
         alt="LogoSneakers"
-        className="mr-auto md:mr-0 mb-1 h-5"
+        className="mb-1 mr-auto h-5 md:mr-0"
       />
-      <nav className="bg-slate-400 absolute h-full p-10 top-0 left-0 flex flex-col md:mr-auto md:flex md:flex-row md:gap-4 gap-y-5 font-bold w-2/5">
+      <nav className="absolute left-0 top-0 flex h-full w-2/5 flex-col gap-y-5 bg-slate-400 p-10 font-bold md:mr-auto md:flex md:flex-row md:gap-4">
         <button className="mb-12" onClick={handleCloseMenu}>
           <CloseIcons />
         </button>
